@@ -1,4 +1,4 @@
-/* ArtProcess.css - Updated */
+/* ArtGallery.css - Updated */
 .art-process-container {
   max-width: 1200px;
   margin: 2rem auto;
@@ -6,6 +6,8 @@
   border-radius: 1rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   width: 100%;
+  display: flex;
+  gap: 1rem;
 }
 
 .art-label {
@@ -59,9 +61,6 @@
   border-color: #3b82f6;
   box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
   z-index: 10;
-}
-
-.art-image-container:hover .art-image-overlay {
   opacity: 1;
 }
 
@@ -73,19 +72,6 @@
 
 .art-image-container:hover .art-image-cropped {
   transform: scale(1.05);
-}
-
-.art-image-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-  color: white;
-  padding: 1.5rem;
-  text-align: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
 }
 
 .art-modal-overlay {

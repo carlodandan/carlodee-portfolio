@@ -1,6 +1,6 @@
 // App.jsx
 import { useState } from 'react';
-import ArtProcess from './components/ArtProcess';
+import ArtGallery from './components/gallery/ArtGallery';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   const renderSection = () => {
     switch (currentSection) {
       case 'art':
-        return <ArtProcess />;
+        return <ArtGallery />;
       case 'about':
         return <AboutSection />;
       default:
@@ -25,7 +25,7 @@ function App() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-gray-900">Carlo Dee</h1>
+              <h1 className="text-2xl font-bold text-gray-900">carlodee</h1>
             </div>
             
             {/* Navigation Links */}
@@ -49,7 +49,7 @@ function App() {
                       : 'text-gray-700 hover:text-blue-600'
                   }`}
                 >
-                  Art Process
+                  Art Gallery
                 </button>
                 <button
                   onClick={() => setCurrentSection('about')}
@@ -109,7 +109,7 @@ const LandingPage = () => {
               onClick={() => window.location.hash = 'art'}
               className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
             >
-              View My Art Process
+              View My Art Gallery
             </button>
             <button
               onClick={() => window.location.hash = 'about'}
@@ -118,26 +118,6 @@ const LandingPage = () => {
               Learn About Me
             </button>
           </div>
-        </div>
-
-        {/* Featured Art Preview */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          {['Character Design', 'Illustration', 'Concept Art'].map((category, index) => (
-            <div
-              key={category}
-              className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow"
-            >
-              <div className="w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-lg mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">🎨</span>
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">{category}</h3>
-              <p className="text-gray-500 text-sm">
-                {index === 0 && 'Expressive character designs with unique personalities'}
-                {index === 1 && 'Vibrant illustrations capturing emotional moments'}
-                {index === 2 && 'Creative concepts bringing stories to life'}
-              </p>
-            </div>
-          ))}
         </div>
       </div>
     </section>
