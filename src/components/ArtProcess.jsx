@@ -10,19 +10,19 @@ const ArtProcess = () => {
       crop: '/img/crop/lineart.webp',
       full: '/img/full/lineart.webp',
       title: 'Line Art',
-      description: 'Clean, precise line work that defines the character\'s form and structure'
+      description: 'Clean, precise line work.'
     },
     flats: {
       crop: '/img/crop/flat.webp',
       full: '/img/full/flat.webp',
       title: 'Flat Colors',
-      description: 'Base color application establishing the character\'s color palette'
+      description: 'Base color application.'
     },
     rendered: {
       crop: '/img/crop/rendered.webp',
       full: '/img/full/rendered.webp',
       title: 'Final Render',
-      description: 'Complete illustration with shading, lighting, and special effects'
+      description: 'Complete illustration.'
     }
   };
 
@@ -123,10 +123,10 @@ const ArtProcess = () => {
                   onClick={(e) => e.stopPropagation()}
                 />
                 <div className="p-6 bg-white">
-                  <h3 className="font-bold text-xl text-gray-900 mb-2">
+                  <h3 className="font-bold text-xl text-gray-900 mb-2 ml-4">
                     {images[expandedImage].title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 ml-4">
                     {images[expandedImage].description}
                   </p>
                 </div>
