@@ -7,20 +7,20 @@ const ArtProcess = () => {
 
   const images = {
     lineart: {
-      crop: '/img/crop/ken.png',
-      full: '/img/full/ken.png',
+      crop: '/img/crop/lineart.webp',
+      full: '/img/full/lineart.webp',
       title: 'Line Art',
       description: 'Clean, precise line work that defines the character\'s form and structure'
     },
     flats: {
-      crop: '/img/crop/ken_copy.png',
-      full: '/img/full/ken_copy.png',
+      crop: '/img/crop/flat.webp',
+      full: '/img/full/flat.webp',
       title: 'Flat Colors',
       description: 'Base color application establishing the character\'s color palette'
     },
     rendered: {
-      crop: '/img/crop/ken_copy_2.png',
-      full: '/img/full/ken_copy_2.png',
+      crop: '/img/crop/rendered.webp',
+      full: '/img/full/rendered.webp',
       title: 'Final Render',
       description: 'Complete illustration with shading, lighting, and special effects'
     }
