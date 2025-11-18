@@ -1,11 +1,12 @@
+/* ArtProcess.css - Updated */
 .art-process-container {
-  max-width: 600px;
-  margin: 3rem auto; /* Added top/bottom margin for centering */
-  padding: 3rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
   background: white;
-  border-radius: 0.75rem;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-  width: 100%; /* Changed from 100% to 90% for proper centering */
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .art-label {
@@ -18,13 +19,12 @@
   flex: 1;
 }
 
-/* Separator Line */
+/* Rest of your existing CSS remains the same */
 .art-separator {
   border-top: 2px solid #d1d5db;
   margin: 1.5rem 0;
 }
 
-/* Grid Layout - FLEX with NO GAP */
 .art-grid {
   display: flex;
   align-items: stretch;
@@ -37,10 +37,9 @@
   align-items: center;
 }
 
-/* Image Container - Remove borders between images */
 .art-image-container {
   width: 100%;
-  height: 600px;
+  height: 500px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -49,7 +48,6 @@
   border: 2px solid #e5e7eb;
 }
 
-/* Remove right border from first two containers to create seamless look */
 .art-column:first-child .art-image-container {
   border-right: none;
   border-radius: 0.75rem 0 0 0.75rem;
@@ -67,14 +65,13 @@
 .art-image-container:hover {
   border-color: #3b82f6;
   box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
-  z-index: 10; /* Bring hovered image to front */
+  z-index: 10;
 }
 
 .art-image-container:hover .art-image-overlay {
   opacity: 1;
 }
 
-/* Cropped image */
 .art-image-cropped {
   height: 100%;
   object-position: top;
@@ -85,23 +82,19 @@
   transform: scale(1.05);
 }
 
-/* Overlay for cropped images */
 .art-image-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  font-size: 1rem;
-  font-weight: 500;
 }
 
-/* Modal Styles */
 .art-modal-overlay {
   position: fixed;
   top: 0;
@@ -156,14 +149,9 @@
   display: block;
 }
 
-/* Animations */
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 @keyframes scaleIn {
@@ -180,9 +168,9 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .art-process-container {
-    padding: 2rem;
+    padding: 1.5rem;
     width: 95%;
-    margin: 2rem auto; /* Adjusted for mobile */
+    margin: 1rem auto;
   }
   
   .art-grid {
@@ -192,49 +180,34 @@
   }
   
   .art-image-container {
-    height: 500px;
+    height: 400px;
   }
   
-  /* Reset borders for mobile */
   .art-column:first-child .art-image-container {
-    border-right: none;
-    border-radius: 0.75rem 0 0 0.75rem;
+    border-right: 2px solid #e5e7eb;
+    border-radius: 0.75rem 0.75rem 0 0;
   }
   
   .art-column:nth-child(2) .art-image-container {
-    border-right: none;
+    border-right: 2px solid #e5e7eb;
     border-radius: 0;
   }
   
   .art-column:last-child .art-image-container {
-    border-radius: 0 0.75rem 0.75rem 0;
+    border-radius: 0 0 0.75rem 0.75rem;
   }
   
   .art-modal-overlay {
-    padding: 1.5rem;
-  }
-  
-  .art-label {
-    font-size: 1.25rem;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .art-process-container {
-    padding: 1.5rem;
-    margin: 1.5rem auto; /* Adjusted for mobile */
+    padding: 1rem;
   }
   
   .art-image-container {
-    height: 500px;
-  }
-  
-  .art-label {
-    font-size: 1.125rem;
-  }
-  
-  .art-image-overlay {
-    font-size: 0.875rem;
-    padding: 0.75rem;
+    height: 300px;
   }
 }
