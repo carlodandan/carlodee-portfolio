@@ -1,66 +1,91 @@
 import { useState } from 'react';
 import './ArtGallery.css';
 
+// Import all images from src/assets
+// Line Art Images
+import lineart1Crop from '../../assets/img/1/crop/lineart.webp';
+import lineart1Full from '../../assets/img/1/full/lineart.webp';
+import lineart2Crop from '../../assets/img/2/crop/lineart.webp';
+import lineart2Full from '../../assets/img/2/full/lineart.webp';
+import lineart3Crop from '../../assets/img/3/crop/lineart.webp';
+import lineart3Full from '../../assets/img/3/full/lineart.webp';
+
+// Flat Color Images
+import flats1Crop from '../../assets/img/1/crop/flat.webp';
+import flats1Full from '../../assets/img/1/full/flat.webp';
+import flats2Crop from '../../assets/img/2/crop/flat.webp';
+import flats2Full from '../../assets/img/2/full/flat.webp';
+import flats3Crop from '../../assets/img/3/crop/flat.webp';
+import flats3Full from '../../assets/img/3/full/flat.webp';
+
+// Rendered Images
+import rendered1Crop from '../../assets/img/1/crop/rendered.webp';
+import rendered1Full from '../../assets/img/1/full/rendered.webp';
+import rendered2Crop from '../../assets/img/2/crop/rendered.webp';
+import rendered2Full from '../../assets/img/2/full/rendered.webp';
+import rendered3Crop from '../../assets/img/3/crop/rendered.webp';
+import rendered3Full from '../../assets/img/3/full/rendered.webp';
+
 const ArtGallery = () => {
   const [expandedImage, setExpandedImage] = useState(null);
 
   const images = [
     {
       lineart: {
-        crop: '/img/1/crop/lineart.webp',
-        full: '/img/1/full/lineart.webp',
+        crop: lineart1Crop,
+        full: lineart1Full,
         title: 'Line Art',
         description: 'Clean, precise line work.'
       },
       flats: {
-        crop: '/img/1/crop/flat.webp',
-        full: '/img/1/full/flat.webp',
+        crop: flats1Crop,
+        full: flats1Full,
         title: 'Flat Colors',
         description: 'Base color application.'
       },
       rendered: {
-        crop: '/img/1/crop/rendered.webp',
-        full: '/img/1/full/rendered.webp',
+        crop: rendered1Crop,
+        full: rendered1Full,
         title: 'Final Render',
         description: 'Complete illustration.'
       }
     },
     {
       lineart: {
-        crop: '/img/2/crop/lineart.webp',
-        full: '/img/2/full/lineart.webp',
+        crop: lineart2Crop,
+        full: lineart2Full,
         title: 'Line Art',
         description: 'Clean, precise line work.'
       },
       flats: {
-        crop: '/img/2/crop/flat.webp',
-        full: '/img/2/full/flat.webp',
+        crop: flats2Crop,
+        full: flats2Full,
         title: 'Flat Colors',
         description: 'Base color application.'
       },
       rendered: {
-        crop: '/img/2/crop/rendered.webp',
-        full: '/img/2/full/rendered.webp',
+        crop: rendered2Crop,
+        full: rendered2Full,
         title: 'Final Render',
         description: 'Complete illustration.'
       }
     },
     {
       lineart: {
-        crop: '/img/3/crop/lineart.webp',
-        full: '/img/3/full/lineart.webp',
+        crop: lineart3Crop,
+        full: lineart3Full,
         title: 'Line Art',
         description: 'Clean, precise line work.'
       },
       flats: {
-        crop: '/img/3/crop/flat.webp',
-        full: '/img/3/full/flat.webp',
+        crop: flats3Crop,
+        full: flats3Full,
         title: 'Flat Colors',
         description: 'Base color application.'
       },
       rendered: {
-        crop: '/img/3/crop/rendered.webp',
-        full: '/img/3/full/rendered.webp',
+        crop: rendered3Crop,
+        full: rendered3Full,
         title: 'Final Render',
         description: 'Complete illustration.'
       }
@@ -90,9 +115,9 @@ const ArtGallery = () => {
         </div>
 
         {/* Art Gallery Containers - Each entry has its own container */}
-          <div className="art-process-container">
-            {/* Images Grid for this artwork */}
-            {images.map((artwork, index) => (
+        <div className="art-process-container">
+          {/* Images Grid for this artwork */}
+          {images.map((artwork, index) => (
             <div key={index} className="art-grid">
               {Object.entries(artwork).map(([type, data]) => (
                 <div key={`${index}-${type}`} className="art-column">
@@ -109,8 +134,8 @@ const ArtGallery = () => {
                 </div>
               ))}
             </div>
-            ))}
-          </div>
+          ))}
+        </div>
 
         {/* Modal for full image */}
         {expandedImage && (
