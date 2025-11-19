@@ -43,7 +43,7 @@ function AppContent() {
       <NavBar currentSection={currentSection} setCurrentSection={handleNavigate} />
 
       {/* Main Content */}
-      <main className="pt-20 w-full max-w-7xl flex-1 flex flex-col items-center">
+      <main className="pt-0 w-full max-w-7xl flex-1 flex flex-col items-center">
         <Routes>
           <Route path="/" element={<Home onNavigate={handleNavigate} />} />
           <Route path="/home" element={<Home onNavigate={handleNavigate} />} />

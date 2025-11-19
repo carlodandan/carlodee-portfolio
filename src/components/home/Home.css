@@ -3,7 +3,35 @@
 .home-section {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+  width: 100vw; /* Full viewport width */
+  margin-left: calc(-50vw + 50%); /* Center trick for full width */
+  margin-right: calc(-50vw + 50%); /* Center trick for full width */
+  left: 0;
+  right: 0;
+  position: relative;
+}
+
+/* Alternative CSS approach if the above doesn't work well */
+.home-section-alternative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* Prevent any horizontal scroll */
+}
+
+.home-title {
+  background: linear-gradient(135deg, #ffffff 0%, #bfdbfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
 }
 
 .home-subtitle {
@@ -54,6 +82,14 @@
 
 /* Mobile-specific adjustments */
 @media (max-width: 640px) {
+  .home-section {
+    padding: 1rem 0;
+    min-height: calc(100vh - 4rem);
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  
   .home-title {
     margin-bottom: 0.75rem;
   }

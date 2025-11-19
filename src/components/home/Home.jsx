@@ -2,9 +2,23 @@
 import './Home.css';
 
 const Home = ({ onNavigate }) => {
+  const backgroundStyle = {
+    backgroundImage: `url('/img/other/hero-banner.webp')`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundAttachment: 'fixed', // This helps with full coverage
+  };
+
   return (
-    <section className="home-section flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto text-center w-full">
+    <section 
+      className="home-section flex items-center justify-center px-4 sm:px-6 lg:px-8 relative w-full"
+      style={backgroundStyle}
+    >
+      {/* Dark overlay with blur */}
+      <div className="absolute inset-0 bg-slate-900/70 backdrop-blur-sm z-0"></div>
+      
+      <div className="max-w-4xl mx-auto text-center w-full relative z-10">
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center space-y-4 sm:space-y-6">
           <h1 className="home-title text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold">

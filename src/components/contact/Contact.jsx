@@ -3,7 +3,7 @@ import './Contact.css';
 const Contact = () => {
   return (
     <section className="contact-section min-h-screen py-5 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className="pt-20 max-w-4xl mx-auto">
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-16">
           <h1 className="contact-title text-4xl sm:text-5xl font-bold text-gray-900 mb-6">

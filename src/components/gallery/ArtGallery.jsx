@@ -189,7 +189,7 @@ const ArtGallery = () => {
 
   return (
     <section className="min-h-screen py-5 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+      <div className="pt-20 max-w-6xl mx-auto">
         {/* Header */}
         <div className="flex flex-col items-center justify-center mb-16">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
