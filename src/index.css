@@ -189,19 +189,19 @@ input:focus, textarea:focus, select:focus {
 }
 
 button {
-  background-color: var(--color-primary-500);
   color: var(--color-white);
   border: none;
   border-radius: var(--radius);
   padding: var(--space-2) var(--space-4);
   cursor: pointer;
   font-weight: var(--font-weight-medium);
-  transition: all var(--transition-fast);
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  background-color: var(--color-primary-600);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
 }
 
 button:active {

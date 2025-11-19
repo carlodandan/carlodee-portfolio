@@ -131,8 +131,10 @@ button.art-modal-close {
   background-color: transparent !important;
 }
 
-.art-modal-close:hover {
-  color: var(--color-primary-500);
+button.art-modal-close:hover {
+  color: #3b82f6;
+  background: transparent;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
 }
 
 .art-modal-image-container {
