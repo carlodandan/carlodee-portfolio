@@ -26,9 +26,16 @@ const NavBar = ({ currentSection, setCurrentSection }) => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white transition-all duration-300 hover:scale-105 cursor-pointer">
-              carlodee
-            </h1>
+            <div 
+              className="transition-all duration-300 hover:scale-105 cursor-pointer flex items-center"
+              onClick={() => handleNavClick('home')}
+            >
+              <img 
+                src="/icons/ms-icon-310x310.png" 
+                alt="Carlo Dee Logo" 
+                className="h-10 w-10 object-contain" // Adjust size as needed
+              />
+            </div>
           </div>
           
           {/* Navigation Links */}

@@ -4,7 +4,7 @@
   background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
   min-height: calc(100vh - 4rem);
   padding: 2rem 0;
-  width: 150%;
+  width: 100%;
 }
 
 .home-title {
