@@ -89,17 +89,13 @@ const Contact = () => {
               <div className="contact-info-icon">💬</div>
               <div>
                 <h3 className="contact-info-title">Social Media</h3>
-                <p className="contact-info-text">Twitter • Instagram • ArtStation</p>
+                <p className="contact-info-text">
+                  <a href="https://twitter.com/deeofficial_iii" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">Twitter</a> • 
+                  <a href="https://instagram.com/_carlodeeart" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors"> Instagram</a> • 
+                  <a href="https://facebook.com/carlodee.official" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors"> Facebook</a> • 
+                  <a href="https://tiktok.com/@_artgalleryofcarlodee" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors"> Tiktok</a>
+                </p>
                 <p className="contact-info-description">Follow for updates and WIPs</p>
-              </div>
-            </div>
-            
-            <div className="contact-info-item">
-              <div className="contact-info-icon">⏰</div>
-              <div>
-                <h3 className="contact-info-title">Response Time</h3>
-                <p className="contact-info-text">1-2 Business Days</p>
-                <p className="contact-info-description">For commission inquiries</p>
               </div>
             </div>
             
