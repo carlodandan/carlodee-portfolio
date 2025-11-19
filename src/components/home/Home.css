@@ -1,27 +1,44 @@
 /* components/Home.css */
 .home-section {
-  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  min-height: calc(100vh - 4rem);
+  padding: 2rem 0;
 }
 
 .home-title {
-  background: linear-gradient(135deg, #1f2937 0%, #4b5563 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #bfdbfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-bottom: 1.5rem;
 }
 
 .home-subtitle {
-  font-weight: 300;
+  font-weight: 500;
   letter-spacing: 0.025em;
+  margin-bottom: 2rem;
+  color: #e2e8f0;
 }
 
 .home-description {
   line-height: 1.7;
+  margin-bottom: 3rem;
+  color: #cbd5e1;
+}
+
+/* Add margin to CTA container */
+.home-cta-container {
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+  margin-top: 2rem;
 }
 
 .home-cta-primary {
   transform: translateY(0);
   transition: all 0.3s ease;
+  margin: 0.5rem;
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
+  color: white;
+  border: none;
 }
 
 .home-cta-primary:hover {
@@ -31,14 +48,16 @@
 
 .home-cta-secondary {
   transition: all 0.3s ease;
+  margin: 0.5rem;
+  background: transparent;
+  color: #e2e8f0;
+  border: 2px solid #3b82f6;
 }
 
 .home-cta-secondary:hover {
   transform: translateY(-2px);
-}
-
-.home-cta-container {
-  animation: fadeInUp 0.8s ease-out 0.3s both;
+  background: rgba(59, 130, 246, 0.1);
+  color: #ffffff;
 }
 
 @keyframes fadeInUp {

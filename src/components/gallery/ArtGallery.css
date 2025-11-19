@@ -4,17 +4,22 @@
   margin: 2rem auto;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   width: 100%;
   display: flex;
   gap: 1rem;
+  background: #1e293b;
+  border: 1px solid #334155;
+  justify-content: center;
+  transform: scaleX(0);
+  animation: scaleIn 0.8s ease-out 0.3s forwards;
 }
 
 .art-label {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #374151;
+  color: #ffffff;
   margin: 0;
   padding: 0.75rem;
   flex: 1;
@@ -38,9 +43,9 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  background: #f9fafb;
+  background: #0f172a;
   position: relative;
-  border: 2px solid #e5e7eb;
+  border: 2px solid #334155;
 }
 
 .art-column:first-child .art-image-container {
@@ -59,7 +64,7 @@
 
 .art-image-container:hover {
   border-color: #3b82f6;
-  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.2);
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
   z-index: 10;
   opacity: 1;
 }
@@ -115,10 +120,11 @@
 }
 
 .art-modal-image-container {
-  background: white;
+  background: #1e293b;
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+  border: 1px solid #334155;
 }
 
 .art-modal-image {
@@ -188,5 +194,16 @@
   
   .art-image-container {
     height: 300px;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }

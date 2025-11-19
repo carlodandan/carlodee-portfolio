@@ -1,10 +1,10 @@
 /* components/About.css */
 .about-section {
-  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
 }
 
 .about-title {
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #bfdbfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -13,16 +13,18 @@
 .about-divider {
   transform: scaleX(0);
   animation: scaleIn 0.8s ease-out 0.3s forwards;
+  background: #3b82f6;
 }
 
 .about-image {
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
 }
 
 .about-image:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
 }
 
 .about-bio-item {
@@ -38,6 +40,7 @@
 .about-bio-title {
   position: relative;
   padding-bottom: 0.5rem;
+  color: #ffffff;
 }
 
 .about-bio-title::after {
@@ -47,7 +50,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  background: linear-gradient(90deg, #3b82f6, #60a5fa);
   transition: width 0.5s ease;
 }
 
@@ -57,10 +60,11 @@
 
 .about-bio-text {
   transition: color 0.3s ease;
+  color: #e2e8f0;
 }
 
 .about-bio-item:hover .about-bio-text {
-  color: #4b5563;
+  color: #ffffff;
 }
 
 .about-skills-grid {
@@ -78,11 +82,16 @@
 
 .about-skill-dot {
   transition: transform 0.3s ease, background-color 0.3s ease;
+  background-color: #3b82f6;
 }
 
 .about-skill-item:hover .about-skill-dot {
   transform: scale(1.5);
-  background-color: #8b5cf6;
+  background-color: #60a5fa;
+}
+
+.about-skill-text {
+  color: #e2e8f0;
 }
 
 @keyframes scaleIn {

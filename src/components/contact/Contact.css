@@ -1,10 +1,10 @@
 /* components/Contact.css */
 .contact-section {
-  background: linear-gradient(135deg, #fafbfc 0%, #f5f7fa 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
 }
 
 .contact-title {
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #bfdbfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -13,6 +13,7 @@
 .contact-divider {
   transform: scaleX(0);
   animation: scaleIn 0.8s ease-out 0.3s forwards;
+  background: #3b82f6;
 }
 
 .contact-form-container {
@@ -21,11 +22,11 @@
 }
 
 .contact-form {
-  background: white;
+  background: #1e293b;
   padding: 2.5rem;
   border-radius: 1rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
 }
 
 .contact-form-group {
@@ -35,7 +36,7 @@
 
 .contact-form-label {
   font-weight: 600;
-  color: #374151;
+  color: #e2e8f0;
   margin-bottom: 0.5rem;
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -45,19 +46,20 @@
 .contact-form-input,
 .contact-form-textarea {
   padding: 0.75rem 1rem;
-  border: 2px solid #e5e7eb;
+  border: 2px solid #334155;
   border-radius: 0.5rem;
   font-size: 1rem;
   transition: all 0.3s ease;
-  background: #f9fafb;
+  background: #0f172a;
+  color: #ffffff;
 }
 
 .contact-form-input:focus,
 .contact-form-textarea:focus {
   outline: none;
   border-color: #3b82f6;
-  background: white;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: #1e293b;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
 .contact-form-textarea {
@@ -67,7 +69,7 @@
 
 .contact-form-submit {
   width: 100%;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
   color: white;
   border: none;
   padding: 1rem 2rem;
@@ -93,11 +95,11 @@
   align-items: flex-start;
   gap: 1rem;
   padding: 1.5rem;
-  background: white;
+  background: #1e293b;
   border-radius: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
   transition: all 0.3s ease;
 }
 
@@ -113,7 +115,7 @@
 
 .contact-info-title {
   font-weight: 600;
-  color: #1f2937;
+  color: #ffffff;
   margin-bottom: 0.25rem;
 }
 
@@ -124,7 +126,7 @@
 }
 
 .contact-info-description {
-  color: #6b7280;
+  color: #cbd5e1;
   font-size: 0.875rem;
 }
 

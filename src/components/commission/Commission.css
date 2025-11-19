@@ -1,10 +1,10 @@
 /* components/Commission.css */
 .commission-section {
-  background: linear-gradient(135deg, #fdfcfb 0%, #f9fafb 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
 }
 
 .commission-title {
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #bfdbfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -13,6 +13,7 @@
 .commission-divider {
   transform: scaleX(0);
   animation: scaleIn 0.8s ease-out 0.3s forwards;
+  background: #3b82f6;
 }
 
 .commission-grid {
@@ -20,20 +21,21 @@
 }
 
 .commission-tier {
-  background: white;
+  background: #1e293b;
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid #334155;
   transition: all 0.4s ease;
   opacity: 0;
   transform: translateY(30px);
   animation: slideUp 0.6s ease-out forwards;
+  color: #e2e8f0;
 }
 
 .commission-tier:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   border-color: #3b82f6;
 }
 
@@ -41,13 +43,13 @@
   text-align: center;
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #f3f4f6;
+  border-bottom: 2px solid #334155;
 }
 
 .commission-tier-name {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #1f2937;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
@@ -58,7 +60,7 @@
 }
 
 .commission-tier-description {
-  color: #6b7280;
+  color: #cbd5e1;
   text-align: center;
   margin-bottom: 1.5rem;
   font-style: italic;
@@ -67,13 +69,12 @@
 .commission-tier-features {
   list-style: none;
   margin-bottom: 2rem;
-  space-y: 0.75rem;
 }
 
 .commission-tier-feature {
-  color: #4b5563;
+  color: #e2e8f0;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f3f4f6;
+  border-bottom: 1px solid #334155;
   position: relative;
   padding-left: 1.5rem;
 }
@@ -88,7 +89,7 @@
 
 .commission-tier-button {
   width: 100%;
-  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  background: linear-gradient(135deg, #3b82f6, #1e40af);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -108,7 +109,7 @@
 }
 
 .commission-process-title {
-  background: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #bfdbfe 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -117,10 +118,11 @@
 .commission-process-step {
   text-align: center;
   padding: 2rem 1rem;
-  background: white;
+  background: #1e293b;
   border-radius: 1rem;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
+  border: 1px solid #334155;
 }
 
 .commission-process-step:hover {
@@ -138,12 +140,12 @@
 .commission-process-step-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #1f2937;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .commission-process-step-description {
-  color: #6b7280;
+  color: #cbd5e1;
   line-height: 1.5;
 }
 

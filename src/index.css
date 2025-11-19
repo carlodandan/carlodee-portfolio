@@ -1,32 +1,39 @@
 /* Root Variables - Design System */
 :root {
-  /* Colors - Primary */
-  --color-primary-50: #eff6ff;
-  --color-primary-100: #dbeafe;
-  --color-primary-500: #3b82f6;
-  --color-primary-600: #2563eb;
-  --color-primary-700: #1d4ed8;
+  /* Colors - Primary - Blue Shades */
+  --color-primary-50: #dbeafe;
+  --color-primary-100: #bfdbfe;
+  --color-primary-200: #93c5fd;
+  --color-primary-300: #60a5fa;
+  --color-primary-400: #3b82f6;
+  --color-primary-500: #2563eb;
+  --color-primary-600: #1d4ed8;
+  --color-primary-700: #1e40af;
+  --color-primary-800: #1e3a8a;
+  --color-primary-900: #1e3a8a;
   
-  /* Colors - Gray Scale */
-  --color-gray-50: #f9fafb;
-  --color-gray-100: #f3f4f6;
-  --color-gray-200: #e5e7eb;
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
-  --color-gray-700: #374151;
-  --color-gray-800: #1f2937;
-  --color-gray-900: #111827;
+  /* Colors - Background - Dark Blue */
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e2e8f0;
+  --color-text-muted: #94a3b8;
   
   /* Colors - Semantic */
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-background: #ffffff;
-  --color-surface: #f8fafc;
-  --color-text-primary: #1f2937;
-  --color-text-secondary: #6b7280;
-  --color-text-muted: #9ca3af;
+  
+  /* Gray Scale - Adjusted for dark theme */
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
   
   /* Spacing */
   --space-1: 0.25rem;
@@ -137,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-tight);
   margin-bottom: var(--space-4);
-  color: var(--color-text-primary);
+  color: var(--color-white);
 }
 
 h1 { font-size: var(--font-size-4xl); }
@@ -153,13 +160,13 @@ p {
 }
 
 a {
-  color: var(--color-primary-600);
+  color: var(--color-primary-400);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-primary-700);
+  color: var(--color-primary-300);
 }
 
 /* Forms */
@@ -167,16 +174,18 @@ input, textarea, select, button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  border: 1px solid var(--color-gray-300);
+  border: 1px solid var(--color-gray-600);
   border-radius: var(--radius);
   padding: var(--space-2) var(--space-3);
   transition: all var(--transition-fast);
+  background-color: var(--color-surface);
+  color: var(--color-white);
 }
 
 input:focus, textarea:focus, select:focus {
   outline: none;
-  border-color: var(--color-primary-500);
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: var(--color-primary-400);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
 }
 
 button {
@@ -200,7 +209,7 @@ button:active {
 }
 
 button:disabled {
-  background-color: var(--color-gray-400);
+  background-color: var(--color-gray-600);
   cursor: not-allowed;
   transform: none;
 }
@@ -213,6 +222,7 @@ ul, ol {
 
 li {
   margin-bottom: var(--space-2);
+  color: var(--color-text-secondary);
 }
 
 /* Images */
@@ -274,11 +284,11 @@ img, picture, video, canvas, svg {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-gray-100);
+  background: var(--color-gray-800);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-gray-400);
+  background: var(--color-gray-600);
   border-radius: var(--radius-full);
 }
 
@@ -288,8 +298,8 @@ img, picture, video, canvas, svg {
 
 /* Selection */
 ::selection {
-  background-color: var(--color-primary-100);
-  color: var(--color-primary-900);
+  background-color: var(--color-primary-200);
+  color: var(--color-black);
 }
 
 /* Focus Styles */
@@ -312,13 +322,6 @@ img, picture, video, canvas, svg {
   }
 }
 
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: #0f172a;
-    --color-surface: #1e293b;
-    --color-text-primary: #f1f5f9;
-    --color-text-secondary: #cbd5e1;
-    --color-text-muted: #94a3b8;
-  }
+.gap-6 {
+  gap: 1.5rem;
 }
